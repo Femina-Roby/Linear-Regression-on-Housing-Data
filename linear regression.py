@@ -9,7 +9,7 @@ housing.info()
 
 house=pd.DataFrame().assign(Price=housing['price'], Area=housing['area'], Bedrooms=housing['bedrooms'], Bathrooms=housing['bathrooms'])
 
-# Data Cleaning - check for null values
+# Data Cleaning - Check for null values
 print(house.isnull().sum())
 
 x=house.drop(columns='Price')
